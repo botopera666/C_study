@@ -1,20 +1,9 @@
 #include <stdio.h>
 
-int sum(int x, int y);
-double abc(int x, int y);
-
 int main()
 {
-	int x=10, y=20;
-	int result;
-
-	result=sum(x, y);
-	printf("%d+%d=%d\n", x, y, result);
-
+	printf("10==10: %d\n", 10==10);
+	printf("10!=10: %d\n", 10!=10);
+	printf("10>5: %d\n", 10>5);
+	printf("10<5: %d\n", 10<5);
 }
-
-int sum(int x, int y)
-{
-	return x+y;
-}
-

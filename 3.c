@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-double abc(int x, int y);
-
 int main()
 {
-	int x, y;
+	printf("0&&0: %d\n", (1>2)&&(1>3));
+	printf("0&&1: %d\n", (1>2)&&(3>1));
+	printf("1&&1: %d\n", (2>1)&&(3>1));
+	printf("\n");
 
-	printf("value of x: ");
-	scanf("%d", &x);
-	printf("value of y: ");
-	scanf("%d", &y);
+	printf("0||0: %d\n", (1>2)||(1>3));
+	printf("0||1: %d\n", (1>2)||(3>1));
+	printf("1||1: %d\n", (2>1)||(3>1));
+	printf("\n");
 
-	float z=abc(x, y);
-	printf("z: %f\n", z);
-}
-
-double abc(int x, int y)
-{
-	return x+y+3.14;
-}
+	printf("!0=%d\n", !(1>2));
+	printf("!1=%d\n", !(2>1));
+} 
