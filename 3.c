@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-main()
-{
-	int int_height=185.7;
-	float float_height=185.7;
-	//float(4)
-	//double(8)
-	double double_height=185.7;
+double abc(int x, int y);
 
-	printf("int: %dcm, float: %fcm\n", int_height, int_height);
-	printf("int: %dcm, float: %fcm\n", float_height, float_height);
-	printf("int: %dcm, float: %fcm\n", double_height, double_height);
-	//double 자료형은 %lf를 사용
+int main()
+{
+	int x, y;
+
+	printf("value of x: ");
+	scanf("%d", &x);
+	printf("value of y: ");
+	scanf("%d", &y);
+
+	float z=abc(x, y);
+	printf("z: %f\n", z);
+}
+
+double abc(int x, int y)
+{
+	return x+y+3.14;
 }

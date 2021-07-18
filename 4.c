@@ -1,10 +1,20 @@
 #include <stdio.h>
 
-main()
+double abc(int x, int y)
 {
-	double a=100000;
+	return x+y+3.14;
+}
 
-	printf("a 변수를 소수점 형태로 표현하면 %f\n", a);
-	printf("a 변수를 지수 형태로 표현하면 %e\n", a);
-	//%e로 지수 형식으로 표현
+int main()
+{
+	int x, y;
+	float z;
+
+	printf("value of x: ");
+	scanf("%d", &x);
+	printf("value of y: ");
+	scanf("%d", &y);
+
+	z=abc(x, y);
+	printf("z: %f\n", z);
 }

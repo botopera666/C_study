@@ -1,16 +1,22 @@
 #include <stdio.h>
 
-main()
+void bell()
 {
-	int a=10;
-	int b=20;
-	int temp;
+	static int order=0;
+	//정적 변수는 단 한 번만 생성되고 초기화됨
+	//
+	//static int order;
+	//order=0;
+	//모든 주문 번호가 1로 나옴
+	
+	order++;
 
-	printf("a: %d, b: %d\n", a, b);
+	printf("현재 주문 번호는 %d\n", order);
+}
 
-	temp=a;
-	a=b;
-	b=temp;
-
-	printf("a: %d, b: %d\n", a, b);
+int main()
+{
+	bell();
+	bell();
+	bell();
 }

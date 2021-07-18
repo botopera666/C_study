@@ -1,9 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
-	float A=10.5*8.4;
-	float B=12.2*6.3;
+int a=1;
 
-	printf("A is %f times stronger than B.\n", A/B);
+void func1()
+{
+	printf("func1()\n");
+	printf("func1() a: %d\n", a);
+	printf("func1() b: %d\n", b);
+}
+
+int main()
+{
+	int b=2;  //main() 내에서만 쓸 수 있는 b
+
+	pirntf("main()\n");
+	printf("main() a: %d\n");
+	printf("main() b: %d\n");
+
+	func1();  //'b' undeclared
 }

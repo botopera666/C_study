@@ -1,8 +1,20 @@
 #include <stdio.h>
 
-void main(void)
+void func10(int x);
+
+int main()
 {
-	printf("Dog's age: %d\n", 3);
-	printf("Dog's weight: %f\n", 5.5);
-	printf("interger가 사용하는 메모리 공간: %d\n", sizeof(int));
+	int a=1, b=3, c=5;
+
+	func10(a);
+	func10(b);
+	func10(c);
 }
+
+void func10(int x)
+{
+	x=x*10;
+	printf("x10: %d\n", x);
+}
+
+func3(char a, int b, double c);

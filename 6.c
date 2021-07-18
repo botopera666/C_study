@@ -1,10 +1,16 @@
 #include <stdio.h>
 
-main()
+void bell()
 {
-	printf("int: %d\n", sizeof(int));
-	printf("long: %d\n", sizeof(long));
-	printf("long long: %d\n", sizeof(long long));
+	int order=0;
 
-	printf("double: %d\n", sizeof(double));
+	order++;
+	printf("현재 주문 번호는 %d.\n", order);
+}
+
+int main()
+{
+	bell();
+	bell();
+	bell();
 }
